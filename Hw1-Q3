@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+
+  int main()
+{
+   int popularity , size ;                                      /* the popularity of the land and the size of the house*/
+   int homevalue;                                               /* the housing prices */ 
+
+   printf ("Enter the popularity of the neighborhood: ");                         
+   scanf ("%d", &popularity);                                    
+
+   printf ("Enter the size of the house: ");                                    
+   scanf ("%d", &size);                                               
+   
+   homevalue =((pow( popularity,3 ) + pow( size,2 )) * 1000) ;               
+
+   printf("Home value is %d TL. \n", homevalue);                 /* print the Home value */
+   return 0;                                                                
+}
+/*	Start
+
+Enter the popularity of the neighborhood: 5
+Enter the size of the house: 2
+Home value is 1290000 TL.
+
+End	*/
+
